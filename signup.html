@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Ubuhanzi Connect</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth-card">
+    <h1>Ubuhanzi Connect</h1>
+    <h2>Create your account</h2>
+    <form id="signup-form">
+      <label>Full name / Organization name <input type="text" id="fullName" required></label>
+      <label>Email <input type="email" id="email" required></label>
+      <label>Password <input type="password" id="password" minlength="6" required></label>
+      <label>I am a
+        <select id="role" required>
+          <option value="youth">Youth (15-30)</option>
+          <option value="mentor">Mentor / Creative professional</option>
+          <option value="organization">Organization / Client</option>
+        </select>
+      </label>
+      <label>Creative discipline
+        <select id="discipline" required>
+          <option>Music</option><option>Fashion</option><option>Film</option>
+          <option>Visual Art</option><option>Design</option><option>Dance</option>
+        </select>
+      </label>
+      <label>Age range
+        <select id="ageRange">
+          <option>15-20</option><option>21-25</option><option>26-30</option><option>30+</option>
+        </select>
+      </label>
+      <label>Location <input type="text" id="location" value="Kigali"></label>
+      <button type="submit">Sign up</button>
+      <p id="message"></p>
+    </form>
+    <p>Already have an account? <a href="login.html">Log in</a></p>
+  </main>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

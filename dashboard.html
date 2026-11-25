@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Ubuhanzi Connect</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <strong>Ubuhanzi Connect</strong>
+    <span id="user-info">Loading...</span>
+    <button id="logout-btn" class="small-btn">Log out</button>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="learn">Learn</button>
+    <button class="tab" data-tab="connect">Connect</button>
+    <button class="tab" data-tab="opportunities">Opportunities</button>
+  </nav>
+
+  <main class="container">
+    <section id="learn" class="tab-panel">
+      <h2>Learning pathways</h2>
+      <p>Pathways filtered by discipline will appear here.</p>
+    </section>
+    <section id="connect" class="tab-panel hidden">
+      <h2>Find a mentor</h2>
+      <p>Verified mentors will appear here.</p>
+    </section>
+    <section id="opportunities" class="tab-panel hidden">
+      <h2>Opportunities</h2>
+      <p>Paid gigs, showcases and grants will appear here.</p>
+    </section>
+  </main>
+
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
